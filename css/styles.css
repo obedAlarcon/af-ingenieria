@@ -1,0 +1,67 @@
+/* ============================================
+   COBRAMASTER - Estilos Globales
+ 
+/* --- Animaciones --- */
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 15px rgba(249, 115, 22, 0.4); }
+    50% { box-shadow: 0 0 30px rgba(249, 115, 22, 0.7); }
+}
+.pulse-orange {
+    animation: pulse-glow 2s infinite;
+}
+
+/* --- Glass Card --- */
+.glass-card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-out;
+}
+.glass-card:hover {
+    border-color: rgba(37, 99, 235, 0.5);
+    transform: translateY(-4px);
+}
+
+/* --- Scroll Reveal --- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Carousel --- */
+.carousel-track {
+    display: flex;
+    transition: transform 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* --- Logo Scroll --- */
+.logo-scroll {
+    display: flex;
+    width: calc(250px * 10);
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 5)); }
+}
+
+/* --- Material Symbols --- */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* --- Header (Navbar) --- */
+#header {
+    background: transparent;
+}
+#header.scrolled {
+    height: 64px;
+    background: rgba(5, 20, 36, 0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(67, 70, 85, 0.3);
+}

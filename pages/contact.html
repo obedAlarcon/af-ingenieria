@@ -1,0 +1,173 @@
+
+
+
+
+
+
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="contacto">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="scroll-reveal">
+            <h2 class="font-display text-headline-lg md:text-display mb-6">Contáctenos</h2>
+            <p class="text-body-lg text-on-surface-variant mb-12">Estamos listos para blindar su empresa. Solicite una consultoría técnica sin costo.</p>
+        <form id="contact-form" action="enviar.php" method="POST" class="space-y-6">
+
+    <!-- Nombre y Empresa -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="space-y-2">
+            <label for="name" class="text-label-md font-bold text-primary">
+                Nombre Completo *
+            </label>
+
+            <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+                placeholder="Ej: Juan Pérez"
+                class="w-full bg-surface border border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+        </div>
+
+        <div class="space-y-2">
+            <label for="company" class="text-label-md font-bold text-primary">
+                Empresa
+            </label>
+
+            <input
+                id="company"
+                name="company"
+                type="text"
+                autocomplete="organization"
+                placeholder="Nombre de su organización"
+                class="w-full bg-surface border border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+        </div>
+
+    </div>
+
+    <!-- Teléfono y Correo -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="space-y-2">
+            <label for="phone" class="text-label-md font-bold text-primary">
+                Teléfono *
+            </label>
+
+            <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel"
+                placeholder="+57 300 123 4567"
+                class="w-full bg-surface border border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+        </div>
+
+        <div class="space-y-2">
+            <label for="email" class="text-label-md font-bold text-primary">
+                Correo Electrónico *
+            </label>
+
+            <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="correo@empresa.com"
+                class="w-full bg-surface border border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+        </div>
+
+    </div>
+
+    <!-- Servicio -->
+    <div class="space-y-2">
+
+        <label for="service" class="text-label-md font-bold text-primary">
+            Servicio de Interés *
+        </label>
+
+        <select
+            id="service"
+            name="service"
+            required
+            class="w-full bg-surface border border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+
+            <option value="">Seleccione un servicio</option>
+            <option value="CCTV">CCTV</option>
+            <option value="Control de Acceso">Control de Acceso</option>
+            <option value="Sistema de Alarmas">Sistema de Alarmas</option>
+            <option value="Detección de Incendios">Detección de Incendios</option>
+            <option value="Cableado Estructurado">Cableado Estructurado</option>
+            <option value="Automatización">Automatización</option>
+            <option value="Mantenimiento">Mantenimiento</option>
+            <option value="Otro">Otro</option>
+
+        </select>
+
+    </div>
+
+    <!-- Mensaje -->
+    <div class="space-y-2">
+
+        <label for="message" class="text-label-md font-bold text-primary">
+            Mensaje o Requerimiento *
+        </label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Describa brevemente su requerimiento..."
+            class="w-full bg-surface border border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none transition"></textarea>
+
+    </div>
+
+    <!-- Botón -->
+  <button
+    id="submit-btn"
+    type="submit"
+    class="w-full bg-primary-container text-on-primary-container py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-all duration-300 shadow-lg">
+    Enviar Solicitud
+</button>
+
+</form>
+        </div>
+        <div class="space-y-8 scroll-reveal" style="transition-delay: 200ms;">
+            <div class="bg-surface rounded-3xl p-8 border border-outline-variant/10 shadow-xl overflow-hidden h-[400px]">
+                <div class="w-full h-full bg-surface-container rounded-2xl overflow-hidden">
+                    <div class="rounded-2xl overflow-hidden shadow-lg">
+   <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.7638650530757!2d-76.50012582596605!3d3.4076644515110757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a72bf27141dd%3A0xdb53947e5f50ca31!2sAv.%20Cdad.%20de%20Cali%20%2339-45%2C%20El%20Vallado%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1782657478593!5m2!1ses-419!2sco"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="flex items-center gap-4 p-6 bg-surface-container rounded-2xl">
+                    <span class="material-symbols-outlined text-secondary text-3xl">location_on</span>
+                    <div>
+                        <p class="text-label-sm font-bold text-on-surface-variant uppercase">Oficina Central</p>
+                        <p class="font-bold">Av. Ciudad De Cali con 39. El Retiro Cali</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-6 bg-surface-container rounded-2xl">
+                    <span class="material-symbols-outlined text-primary text-3xl">phone_in_talk</span>
+                    <div>
+                        <p class="text-label-sm font-bold text-on-surface-variant uppercase">Línea Directa</p>
+                        <p class="font-bold">+57 302 312 75 76</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
